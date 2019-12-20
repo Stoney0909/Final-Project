@@ -1,0 +1,88 @@
+USE FinalProject;
+
+ALTER TABLE invoices
+   DROP COLUMN ShipVia;
+ALTER TABLE invoices
+   DROP COLUMN CreatedBy;
+ALTER TABLE invoices
+   DROP COLUMN TaxRate;
+ALTER TABLE invoices
+   DROP COLUMN FirstName;
+ALTER TABLE invoices
+   DROP COLUMN LastName;
+ALTER TABLE invoices
+   DROP COLUMN FullName;
+ALTER TABLE invoices
+   DROP COLUMN Email;
+ALTER TABLE invoices
+   DROP COLUMN Phone;
+ALTER TABLE invoices
+   DROP COLUMN Fax;
+ALTER TABLE invoices
+   DROP COLUMN Street;
+ALTER TABLE invoices
+   DROP COLUMN City;
+ALTER TABLE invoices
+   DROP COLUMN State;
+ALTER TABLE invoices
+   DROP COLUMN PostalCode;
+ALTER TABLE invoices
+   DROP COLUMN Company;
+ALTER TABLE invoices
+   DROP COLUMN Title;
+ALTER TABLE contacts
+    drop column title;
+ALTER TABLE invoices
+   DROP COLUMN ShipmentStatus;
+ALTER TABLE contacts
+    drop column city;
+ALTER TABLE contacts
+    drop column company;
+ALTER TABLE contacts
+    drop column jobtitle;
+ALTER TABLE contacts
+    drop column phone;
+ALTER TABLE contacts
+    drop column fax;
+ALTER TABLE contacts
+    drop column state;
+ALTER TABLE contacts
+    drop column taxrate;
+ALTER TABLE invoiceitems
+    drop column PartNumber;
+ALTER TABLE invoiceitems
+    drop column ProductName;
+ALTER TABLE invoices
+    drop column PartNumber;
+ALTER TABLE invoices
+    drop column ProductName;
+ALTER TABLE invoices
+    drop column Price;
+ALTER TABLE invoices
+    drop column Quantity;
+ALTER TABLE contacts
+    drop column DiscountRate;
+ALTER TABLE invoices
+    drop column TaxAmount;
+ALTER TABLE invoices
+    drop column Subtotal;
+ALTER TABLE invoices
+    drop column ExtendedPrice;
+ALTER TABLE invoices
+    drop column InvoiceTotal;
+ALTER TABLE invoices
+    drop column Taxable;
+ALTER TABLE invoices
+    drop column UnitDimensions;
+ALTER TABLE invoices
+    drop column ProductWeight;
+ALTER TABLE invoices
+    drop column DiscountRate;
+ALTER TABLE invoiceitems
+    drop column Taxable;
+ALTER TABLE invoiceitems
+    drop column ProductWeight;
+ALTER TABLE contacts
+    drop column email;
+ALTER TABLE contacts
+    drop column fullname;
