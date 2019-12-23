@@ -25,7 +25,7 @@ alter table invoices add column billedtopostalcode int(10);
 
 
 update invoices
-    inner join contacts
+    join contacts
     on contacts.contact_ID = invoices.SentTo
     set invoices.senttoFirstname = contacts.firstname,
      invoices.senttolastname = contacts.lastname,
@@ -38,5 +38,5 @@ update invoices
      invoices.billedtocity_id = contacts.City_ID,
      invoices.billedtostate_id = contacts.State_ID,
      invoices.billedtostreet = contacts.street,
-     invoices.billedtopostalcode = contacts.PostalCode,
-where contact_ID is not null;
+     invoices.billedtopostalcode = contacts.PostalCode
+where   contact_ID is not null ;

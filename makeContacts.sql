@@ -58,8 +58,8 @@ UPDATE invoices
 
 
 
-
-SELECT inv.FirstName, ct.firstname
-	FROM contacts AS ct
-		INNER JOIN invoices AS inv
-	ON ct.contact_ID = inv.Contact_ID;
+#
+# SELECT inv.FirstName, ct.firstname
+# 	FROM contacts AS ct
+# 		INNER JOIN invoices AS inv
+# 	ON ct.contact_ID = inv.Contact_ID;
